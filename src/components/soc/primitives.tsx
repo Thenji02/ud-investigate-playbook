@@ -40,7 +40,7 @@ export function Badge({ tone, children }: { tone: string; children: ReactNode })
     <span
       className={cn(
         "inline-flex items-center whitespace-nowrap rounded border px-2 py-0.5 font-mono text-[0.68rem] font-medium uppercase tracking-wider",
-        sevMap[tone.toLowerCase()] ?? sevMap.neutral,
+        sevMap[tone.toLowerCase()] ?? sevMap["neutral"],
       )}
     >
       {children}
